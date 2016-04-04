@@ -1,0 +1,3 @@
+Song.create(title: 'Tesselate', artist: 'Alt-J', description: nil, url: 'https://www.youtube.com/watch?v=Qg6BwvDcANg', image: 'http://s3.amazonaws.com/rapgenius/An-Awesome-Wave-Alt-J.jpg') 
+Song.create(title: 'Sic Transit Gloria', artist: 'Brand New', description: nil, url: 'https://www.youtube.com/watch?v=h3YVKTxTOgU', image: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_DNdMrNZ4UZXfiyYUS8JPTeBNqAUhbS61r0D9q43cIo3a2Vz4')
+Song.create(title: 'In the Fade', artist: 'Queens of the Stoneage', description: nil, url: 'https://www.youtube.com/watch?v=r2mybZ3KT2E', image: 'http://assets.rollingstone.com/assets/images/list/ea8438930eabe68e06d17eace60313a2ae85ffde.jpg')
