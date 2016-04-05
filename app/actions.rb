@@ -5,9 +5,21 @@ end
 
 get '/songs' do 
   @songs = Song.all
-  erb :'song_list/index'
+  erb :'songs/index'
 end
 
 get '/songs/new' do
-  erb :'/song_list/new'
+  erb :'songs/new'
+end
+
+post '/songs' do
+  @song = Song.new(
+    title: params[:title], 
+    artist: params[:artist], 
+    description: params[:description], 
+    url: params[:url], 
+    image: params[:image]
+    )
+  @song.save
+    redirect '/songs'
 end
