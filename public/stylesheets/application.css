@@ -29,7 +29,11 @@
 .song {
   font-family: Helvetica neue;
   font-weight: lighter;
-  margin-left: 40px;
+  margin-left: 50px;
+}
+
+.song:hover {
+color: red;
 }
 
 .song_title {
@@ -60,5 +64,11 @@
   color: white;
   font-family: Helvetica neue;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 26px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+#post:hover {
+  color: red;
 }
