@@ -33,7 +33,7 @@
 }
 
 .song:hover {
-color: red;
+  color: red;
 }
 
 .song_title {
@@ -60,15 +60,131 @@ color: red;
   height: 100px;
 }
 
-#post {
+.post {
   color: white;
+  display: inline;
   font-family: Helvetica neue;
   font-weight: lighter;
   font-size: 26px;
   margin-left: 50px;
-  margin-top: 20px;
 }
 
-#post:hover {
+.post:hover {
   color: red;
 }
+
+#remove {
+  color: white;
+  display: inline;
+  font-family: Helvetica neue;
+  font-weight: lighter;
+  font-size: 26px;
+  margin-left: 50px;
+  /*padding-top: 30px;*/
+}
+
+#remove:hover {
+  color: red;
+}
+
+/*======MODAL======*/
+
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+/*.modalwindow {
+    background: #FF5722;
+    position:fixed;
+    display:none; /* Hides the modal window by default */
+   /* width:500px;
+    z-index:9999;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+*/
+
+/*h2 {
+    background-color: #E64A19;
+    padding: 15px;
+    font-size: 25px;
+    color: #000;
+    margin: 0;
+    font-family: arial;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.close {
+    float: right;
+    margin-top: -47px;
+    margin-right: 15px;
+    width: 17px;
+    height: 17px;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+}*/

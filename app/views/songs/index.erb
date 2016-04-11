@@ -1,4 +1,4 @@
-<h1 id="songs_header">Songs</h1>
+<h1 id="songs_header">SongBook</h1>
 <% @songs.each do |song| %>
   <div class="song">
     <h3 class="song_title"><%= song.title %> <small>(by: <%= song.artist %>)</small></h3>
@@ -16,5 +16,40 @@
 
 <div class="footer">
   <hr>
-<a href="/songs/new"><div id="post">Post a song</div></a>
+  <a class="post" data-popup-open="popup-1" href="#">Post a Song</a>
+  <div class="popup" data-popup="popup-1">
+      <div class="popup-inner">
+          <h2>Post a Song:</h2>
+   <hr/>
+            <form method="post" action="/songs">
+              <div>
+                <label>Artist:</label>
+                <input type="text" name="artist">
+              </div>
+              <div>
+                <label>Title</label>
+                <input type="text" name="title">
+              </div>
+              <div>
+                <label>Description</label>
+                <input type="text" name="description">
+              </div>
+              <div>
+                <label>URL</label>
+                <input type="text" name="url">
+              </div>
+              <div>
+                <label>Image</label>
+                <input type="text" name="image">
+              </div>
+              <div>
+                <input type="submit" value="Submit">
+              </div>
+              <a href="/songs"><div id="back">Back to Songs</div></a>
+            </form>
+          <p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+      </div>
+    </div>
+  <a href><div id="remove">Remove a song</div></a>
 </div>
