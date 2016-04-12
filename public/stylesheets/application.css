@@ -103,14 +103,14 @@
 .popup-inner {
     max-width:700px;
     width:90%;
-    padding:40px;
+    padding: 20px;
     position:absolute;
     top:50%;
     left:50%;
     -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%);
     box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
+    border-radius:8px;
     background:#fff;
 }
  
@@ -142,49 +142,77 @@
     text-decoration:none;
 }
 
-/*.modalwindow {
-    background: #FF5722;
-    position:fixed;
-    display:none; /* Hides the modal window by default */
-   /* width:500px;
-    z-index:9999;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-}
-*/
-
-/*h2 {
-    background-color: #E64A19;
-    padding: 15px;
-    font-size: 25px;
-    color: #000;
-    margin: 0;
-    font-family: arial;
-    text-align: center;
+#post_header {
+  font-family: Helvetica neue;
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
 }
 
-.content {
-    padding: 20px;
-    color: #fff;
-    font-size: 22px;
-    line-height: 30px;
+#artist {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+  /*text-align: justify;*/
 }
 
-.close {
-    float: right;
-    margin-top: -47px;
-    margin-right: 15px;
-    width: 17px;
-    height: 17px;
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: arial;
-}*/
+#title {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+  /*text-align: justify;*/
+}
+
+#description {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+ /* text-align: justify;*/
+}
+
+#url {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+  /*text-align: justify;*/
+}
+
+#image {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+  /*text-align: justify;*/
+}
+
+#submit {
+  font-family: Helvetica neue;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+  /*text-align: justify;*/
+}
+
+#back {
+  font-family: Helvetica neue;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+#close {
+  font-family: Helvetica neue;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+

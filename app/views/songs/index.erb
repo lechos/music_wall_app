@@ -19,35 +19,35 @@
   <a class="post" data-popup-open="popup-1" href="#">Post a Song</a>
   <div class="popup" data-popup="popup-1">
       <div class="popup-inner">
-          <h2>Post a Song:</h2>
+          <h2 id="post_header">Post a Song:</h2>
    <hr/>
             <form method="post" action="/songs">
-              <div>
+              <div id="artist">
                 <label>Artist:</label>
                 <input type="text" name="artist">
               </div>
-              <div>
-                <label>Title</label>
+              <div id="title">
+                <label>Title:</label>
                 <input type="text" name="title">
               </div>
-              <div>
-                <label>Description</label>
+              <div id="description">
+                <label>Description:</label>
                 <input type="text" name="description">
               </div>
-              <div>
-                <label>URL</label>
+              <div id="url">
+                <label>URL:</label>
                 <input type="text" name="url">
               </div>
-              <div>
-                <label>Image</label>
+              <div id="image">
+                <label>Image:</label>
                 <input type="text" name="image">
               </div>
-              <div>
+              <div id="submit">
                 <input type="submit" value="Submit">
               </div>
               <a href="/songs"><div id="back">Back to Songs</div></a>
             </form>
-          <p><a data-popup-close="popup-1" href="#">Close</a></p>
+          <p id="close"><a data-popup-close="popup-1" href="#">Close</a></p>
         <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
       </div>
     </div>
