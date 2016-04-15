@@ -51,5 +51,28 @@
         <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
       </div>
     </div>
-  <a href><div id="remove">Remove a song</div></a>
+
+
+<a class="remove" data-popup-open="popup-1" href="#">Remove a song</a>
+    <div class="popup2" data-popup="popup-1">
+      <div class="popup-inner2">
+          <h2 id="post_header2">Remove a Song:</h2>
+   <hr/>
+            <form method="post" action="/songs">
+              <div id="artist">
+                <label>Artist:</label>
+                <input type="text" name="artist">
+              </div>
+              <div id="title">
+                <label>Title:</label>
+                <input type="text" name="title">
+              </div>
+              <div id="submit">
+                <input type="submit" value="Submit">
+              </div>
+              <a href="/songs"><div id="back">Back to Songs</div></a>
+            </form>
+          <p id="close"><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+
 </div>

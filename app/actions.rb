@@ -23,3 +23,12 @@ post '/songs' do
   @song.save
     redirect '/songs'
 end
+
+delete '/songs' do 
+  @song = Song.new(
+    title: params[:title], 
+    artist: params[:artist]
+    )
+  @song.save
+    redirect '/songs'
+end
