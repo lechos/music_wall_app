@@ -203,6 +203,14 @@
   /*text-align: justify;*/
 }
 
+#delete {
+  font-family: Helvetica neue;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+}
+
 #back {
   font-family: Helvetica neue;
   font-weight: lighter;

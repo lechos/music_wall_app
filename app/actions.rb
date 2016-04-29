@@ -25,11 +25,7 @@ post '/songs' do
     redirect '/songs'
 end
 
-delete '/songs' do 
-  @song = Song.new(
-    title: params[:title], 
-    artist: params[:artist]
-    )
-  @song.save
+delete '/songs/:id' do 
+  @song = Song.delete(params[:id])
     redirect '/songs'
 end
