@@ -1,6 +1,5 @@
  $(document).ready(function() {
 
-
   var target = $('#songs_header');
   var targetHeight = target.outerHeight();
 

@@ -7,6 +7,7 @@ gem 'activesupport'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
+#gem 'rack-methodoverride-with-params', '~> 1.0'
 
 gem 'puma'
 gem 'tux'

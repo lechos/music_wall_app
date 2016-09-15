@@ -5,6 +5,9 @@
     <p>
       <%= song.description %>
     </p>
+     <p>
+      <%= song.id %>
+    </p>
     <p>
       <%= song.url %>
     </p>
@@ -57,15 +60,11 @@
     <div class="popup2" data-popup="popup-2">
       <div class="popup-inner2">
           <h2 id="post_header2">Remove a Song:</h2>
-          <form method="post" action="/songs">
+         <form action="/songs/id/delete" method="post">
             <input type="hidden" name="_method" value="delete">
-              <div id="artist">
-                <label>Artist:</label>
-                <input type="text" name="artist">
-              </div>
-              <div id="title">
-                <label>Title:</label>
-                <input type="text" name="title">
+              <div id="song_id">
+                <label>id:</label>
+                <input type="text" name="id">
               </div>
               <button type="submit" id="delete">Delete</button>
               <a href="/songs"><div id="back">Back to Songs</div></a>

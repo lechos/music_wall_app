@@ -25,7 +25,16 @@ post '/songs' do
     redirect '/songs'
 end
 
-delete '/songs/:id' do 
-  @song = Song.delete(params[:id])
-    redirect '/songs'
+# delete '/songs/:id' do |id|
+#   # puts "delete pressed"
+#    @song.delete(
+#     id: params[:song_id]
+#     )
+#     redirect '/songs'
+# end
+
+delete '/songs/id/delete' do
+  @song = Song.where(:id => params[:id]).first
+  @song.delete
+  redirect to '/songs'
 end
