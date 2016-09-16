@@ -33,8 +33,16 @@ end
 #     redirect '/songs'
 # end
 
-delete '/songs/id/delete' do
-  @song = Song.where(:id => params[:id]).first
+delete '/songs/title/delete' do
+  @song = Song.find_by(
+    title: params[:title], 
+    artist: params[:artist]
+  )
+  #@song = Song.find(params[:id])
+  # @song = Song.where(:id => params[:id]).first
   @song.delete
   redirect to '/songs'
 end
+
+# TODO: error if ID query does not exist in database
+# find by title rather than id
