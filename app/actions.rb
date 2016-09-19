@@ -21,17 +21,12 @@ post '/songs' do
     url: params[:url], 
     image: params[:image]
     )
-  @song.save
-    redirect '/songs'
+  if @song.save
+    redirect to '/songs'
+  else 
+    redirect to '/songs'
+  end
 end
-
-# delete '/songs/:id' do |id|
-#   # puts "delete pressed"
-#    @song.delete(
-#     id: params[:song_id]
-#     )
-#     redirect '/songs'
-# end
 
 delete '/songs/title/delete' do
   @song = Song.find_by(
@@ -40,9 +35,19 @@ delete '/songs/title/delete' do
   )
   #@song = Song.find(params[:id])
   # @song = Song.where(:id => params[:id]).first
-  @song.delete
-  redirect to '/songs'
+
+  if @song.delete
+    redirect to '/songs'
+  else
+    redirect to '/songs'
+  end
 end
 
 # TODO: error if ID query does not exist in database
-# find by title rather than id
+#
+#validations: error if fields empty or mistake exists
+#find closest match
+#youtube api: embed videos
+#implement login
+#redesign front-end stuff
+#learn angular this week
