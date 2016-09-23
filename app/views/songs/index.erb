@@ -27,11 +27,11 @@
             <form method="post" action="/songs">
               <div id="artist">
                 <label>Artist:</label>
-                <input type="text" name="artist">
+                <input type="text" name="artist" required>
               </div>
               <div id="title">
                 <label>Title:</label>
-                <input type="text" name="title">
+                <input type="text" name="title" required>
               </div>
               <!-- <div id="description">
                 <label>Description:</label>
@@ -41,10 +41,10 @@
                 <label>URL:</label>
                 <input type="text" name="url">
               </div>
-              <div id="image">
+             <!--  <div id="image">
                 <label>Image:</label>
                 <input type="text" name="image">
-              </div>
+              </div> -->
               <div id="submit">
                 <input type="submit" value="Submit">
               </div>
@@ -63,12 +63,12 @@
          <form action="/songs/title/delete" method="post">
             <input type="hidden" name="_method" value="delete">
               <div id="song_id">
-                <label>title:</label>
-                <input type="text" name="title">
+                <label>Title:</label>
+                <input type="text" name="title" required>
               </div>
               <div id="song_artist">
-                <label>artist</label>
-                <input type="text" name="artist">
+                <label>Artist</label>
+                <input type="text" name="artist" required>
               </div>
               <button type="submit" id="delete">Delete</button>
               <a href="/songs"><div id="back">Back to Songs</div></a>
@@ -78,7 +78,8 @@
   </div>
 </div>
 
-
+<!-- error:
+if fields empty, error message in modal  -->
 
 <a class="login" href="#">Login</a>  
 <!-- ^^To be implemented later -->

@@ -21,11 +21,8 @@ post '/songs' do
     url: params[:url], 
     image: params[:image]
     )
-  if @song.save
+   @song.save
     redirect to '/songs'
-  else 
-    redirect to '/songs'
-  end
 end
 
 delete '/songs/title/delete' do
@@ -36,11 +33,9 @@ delete '/songs/title/delete' do
   #@song = Song.find(params[:id])
   # @song = Song.where(:id => params[:id]).first
 
-  if @song.delete
+    @song.delete
     redirect to '/songs'
-  else
-    redirect to '/songs'
-  end
+  
 end
 
 # TODO: error if ID query does not exist in database
@@ -51,3 +46,9 @@ end
 #implement login
 #redesign front-end stuff
 #learn angular this week
+
+#search for and follow friends
+#***rate/review songs
+#recommend songs?
+#share songs
+#

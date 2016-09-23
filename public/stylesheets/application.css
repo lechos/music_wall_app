@@ -270,4 +270,20 @@
   text-align: center;
 }
 
+#song_id {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+#song_artist {
+  font-family: Helvetica neue;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 10%;
+  padding: 10px;
+}
+
 
